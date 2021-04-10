@@ -1,8 +1,8 @@
 import { Box, Button, Flex, Heading, Icon, Table, Thead, Tr, Th, Checkbox, Tbody, Td, Text } from '@chakra-ui/react';
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
-import { Header } from '../../components/Header';
-import { Pagination } from '../../components/Pagination';
-import { Sidebar } from '../../components/Sidebar';
+import { Header } from '../../components/Header/';
+import { Pagination } from '../../components/Pagination/';
+import { Sidebar } from '../../components/Sidebar/';
 
 export default function UserList() {
   return (
@@ -23,7 +23,7 @@ export default function UserList() {
             </Button>
           </Flex>
 
-          <Table colorSchema="whiteAlpha">
+          <Table colorScheme="whiteAlpha">
             <Thead>
               <Tr>
                 <Th px="6" color="gray.300" width="8">
@@ -51,7 +51,7 @@ export default function UserList() {
                     as="a"
                     size="sm"
                     fontSize="small"
-                    colorScheme="green"
+                    colorScheme="blue"
                     leftIcon={<Icon fontSize="16" as={RiPencilLine}
                     />}>
                     Editar
@@ -74,7 +74,7 @@ export default function UserList() {
                     as="a"
                     size="sm"
                     fontSize="small"
-                    colorScheme="green"
+                    colorScheme="blue"
                     leftIcon={<Icon fontSize="16" as={RiPencilLine}
                     />}>
                     Editar
@@ -97,7 +97,7 @@ export default function UserList() {
                     as="a"
                     size="sm"
                     fontSize="small"
-                    colorScheme="green"
+                    colorScheme="blue"
                     leftIcon={<Icon fontSize="16" as={RiPencilLine}
                     />}>
                     Editar
