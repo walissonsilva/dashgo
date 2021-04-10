@@ -8,15 +8,27 @@ export function Sidebar() {
     <Box as="aside" w="64" mr="8">
       <Stack spacing="12" align="flex-start">
         <NavSection title="GERAL">
-          <NavLink icon={RiDashboardLine} text="Dashboard" />
+          <NavLink
+            icon={RiDashboardLine}
+            text="Dashboard"
+          />
 
-          <NavLink icon={RiContactsLine} text="Contacts" />
+          <NavLink
+            icon={RiContactsLine}
+            text="Contacts"
+          />
         </NavSection>
 
         <NavSection title="AUTOMAÇÃO">
-          <NavLink icon={RiInputMethodLine} text="Formulários" />
+          <NavLink
+            icon={RiInputMethodLine}
+            text="Formulários"
+          />
 
-          <NavLink icon={RiGitMergeLine} text="Automação" />
+          <NavLink
+            icon={RiGitMergeLine}
+            text="Automação"
+          />
         </NavSection>
       </Stack>
     </Box>

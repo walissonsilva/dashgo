@@ -6,7 +6,11 @@ interface NavLinkProps extends ChakraLinkProps {
   text: string;
 }
 
-export function NavLink({ icon, text, ...rest }: NavLinkProps) {
+export function NavLink({
+  icon,
+  text,
+  ...rest
+}: NavLinkProps) {
   return (
     <Link display="flex" align="center" {...rest} >
       <Icon as={icon} fontSize="20" />
