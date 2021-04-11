@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Heading, Icon, Table, Thead, Tr, Th, Checkbox, Tbody, Td, Text, useBreakpointValue } from '@chakra-ui/react';
+import Link from 'next/link';
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import { Header } from '../../components/Header/';
 import { Pagination } from '../../components/Pagination/';
@@ -17,21 +18,23 @@ export default function UserList() {
       <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
         <Sidebar />
 
-        <Box flex="1" borderRadius={8} bg="gray.800" p={["3", "4", "8"]}>
+        <Box flex="1" borderRadius={8} bg="gray.800" p={["4", "4", "8"]}>
           <Flex mb="8" justify="space-between" align="center">
             <Heading size="lg" fontWeight="normal">
               Usuários
             </Heading>
 
-            <Button as="a" size="sm" fontSize="small" colorScheme="pink" leftIcon={<Icon fontSize="18" as={RiAddLine} />}>
-              Criar novo
-            </Button>
+            <Link href="/users/create">
+              <Button as="a" size="sm" fontSize="small" colorScheme="pink" leftIcon={<Icon fontSize="18" as={RiAddLine} />}>
+                Criar novo
+              </Button>
+            </Link>
           </Flex>
 
           <Table colorScheme="whiteAlpha">
             <Thead>
               <Tr>
-                <Th px={["2", "4", "6"]} color="gray.300" width="8">
+                <Th px={["1", "4", "6"]} color="gray.300" width="8">
                   <Checkbox colorScheme="pink" />
                 </Th>
                 <Th>Usuário</Th>
@@ -41,7 +44,7 @@ export default function UserList() {
             </Thead>
             <Tbody>
               <Tr>
-                <Td px={["2", "4", "6"]}>
+                <Td px={["1", "4", "6"]}>
                   <Checkbox colorScheme="pink" />
                 </Td>
                 <Td>
@@ -63,7 +66,7 @@ export default function UserList() {
                 </Td>
               </Tr>
               <Tr>
-                <Td px={["2", "4", "6"]}>
+                <Td px={["1", "4", "6"]}>
                   <Checkbox colorScheme="pink" />
                 </Td>
                 <Td>
@@ -85,7 +88,7 @@ export default function UserList() {
                 </Td>
               </Tr>
               <Tr>
-                <Td px={["2", "4", "6"]}>
+                <Td px={["1", "4", "6"]}>
                   <Checkbox colorScheme="pink" />
                 </Td>
                 <Td>
